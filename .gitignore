@@ -1,3 +1,4 @@
+HEAD
 /linux-*
 /busybox-*
 /rootfs/*
@@ -9,3 +10,43 @@
 *.bin
 *.iso
 *.log
+=======
+# Kernel build artifacts
+linux/arch/*/boot/bzImage
+linux/.config
+linux/.version
+linux/Module.symvers
+linux/System.map
+linux/vmlinux
+linux/include/config
+
+# BusyBox build artifacts
+busybox/.config
+busybox/_install
+busybox/busybox
+
+# Initramfs and related files
+initramfs.cpio
+initramfs.cpio.gz
+
+# Generic build junk
+*.o
+*.ko
+*.mod.c
+*.tmp
+*.log
+*.swp
+*.bak
+*.tar
+*.tar.*
+*.img
+*.iso
+
+# QEMU/VM files
+*.pid
+*.sock
+
+# Editor configs
+.vscode/
+.idea/
+>>>>>>> 83c49cd46b231fb4a9d59994fe3f4292040762f3
