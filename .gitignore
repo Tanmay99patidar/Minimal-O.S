@@ -1,0 +1,11 @@
+/linux-*
+/busybox-*
+/rootfs/*
+!rootfs/init
+*.o
+*.img
+*.gz
+*.cpio
+*.bin
+*.iso
+*.log
